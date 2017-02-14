@@ -1,0 +1,1 @@
+angular.module("NoteTaker", ["ngRoute", "ngResource"]);
