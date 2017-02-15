@@ -1,13 +1,14 @@
-<html>
+<!DOCTYPE html ng-app="NoteTaker">
 
 <head>
-    <title>Note Taking App</title>
+    <title>Note Taker App</title>
     <link rel="stylesheet" href="assets/styles/bootstrap.css"></link>
     <link rel="stylesheet" href="assets/styles/bootstrap-theme.css"></link>
 </head>
 
 <body>
-    <h1>Hello World!</h1>
+    <h1>Note Taker App</h1>
+    <div ng-view></div>
 </body>
 
 <!--Vendor-->
@@ -15,11 +16,24 @@
 <script src="assets/javascript/vendor/angular.js"></script>
 <script src="assets/javascript/vendor/angular-route.js"></script>
 <script src="assets/javascript/vendor/angular-resource.js"></script>
+<script src="assets/javascript/vendor/bootstrap.js"></script>
 
 <!--App-->
+<script src="assets/javascript/app.js"></script>
+<script src="assets/javascript/routes.js"></script>
 
 <!--Directives-->
 <!--Controllers-->
+
+<script src="assets/javascript/controllers/noteIndexController.js"></script>
+<script src="assets/javascript/controllers/noteShowController.js"></script>
+<script src="assets/javascript/controllers/noteEditController.js"></script>
+<script src="assets/javascript/controllers/noteCreateController.js"></script>
+
+
 <!--Services-->
+<script src="assets/javascript/services/note.js"></script>
+<script src="assets/javascript/services/user.js"></script>
+<script src="assets/javascript/services/category.js"></script>
 
 </html>
