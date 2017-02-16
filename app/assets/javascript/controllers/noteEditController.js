@@ -1,3 +1,3 @@
-angular.module("NoteTaker").controller("NotesEditController", () => {
+angular.module("NoteTaker").controller("NotesEditController", function() {
 
 });

@@ -1,3 +1,3 @@
-angular.module("NoteTaker").controller("NotesShowController", () => {
-
+angular.module("NoteTaker").controller("NotesShowController", function(Note, $scope, $routeParams) {
+    $scope.note = Note.get({ id: $routeParams.id });
 });
