@@ -7,13 +7,13 @@ angular.module("NoteTaker").config(function($routeProvider) {
             templateUrl: "assets/templates/notes/index.html",
             controller: "NotesIndexController"
         })
-        .when("/notes/:id", {
-            templateUrl: "assets/templates/notes/show.html",
-            controller: "NotesShowController"
-        })
         .when("/notes/new", {
             templateUrl: "assets/templates/notes/new.html",
             controller: "NotesCreateController"
+        })
+        .when("/notes/:id", {
+            templateUrl: "assets/templates/notes/show.html",
+            controller: "NotesShowController"
         })
         .when("/notes/:id/edit", {
             templateUrl: "assets/templates/notes/edit.html",

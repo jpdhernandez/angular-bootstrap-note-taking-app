@@ -5,9 +5,10 @@ angular.module("NoteTaker").controller("NotesEditController", function(Note, $sc
     $scope.saveNote = function(note) {
         $scope.isSubmitting = true;
 
-        note.$update().finally(function() {
-            $scope.isSubmitting = false;
-            $location.path("/notes/" + note.id);
-        });
+        note.$update()
+            .finally(function() {
+                $scope.isSubmitting = false;
+                $location.path("/notes/" + note.id);
+            });
     };
 });
