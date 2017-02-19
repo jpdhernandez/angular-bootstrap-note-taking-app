@@ -1,23 +1,23 @@
 <html ng-app="NoteTaker">
 
 <head>
-    <title>Note Taker App</title>
-    <link rel="stylesheet" href="assets/styles/bootstrap.css"></link>
-    <link rel="stylesheet" href="assets/styles/bootstrap-theme.css"></link>
+  <title>Note Taker App</title>
+  <link rel="stylesheet" href="assets/styles/bootstrap.css"></link>
+  <link rel="stylesheet" href="assets/styles/bootstrap-theme.css"></link>
 </head>
 
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <div class="navbar-brand">
-                    <a href="/#/">Note Taker</a>
-                </div>
-            </div>
-            <nt-page-nav></nt-page-nav>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <div class="navbar-brand">
+          <a href="/#/">Note Taker</a>
         </div>
-    </nav>
-    <div ng-view class="container-fluid"></div>
+      </div>
+      <nt-page-nav></nt-page-nav>
+    </div>
+  </nav>
+  <div ng-view class="container-fluid"></div>
 </body>
 
 <!--Vendor-->
@@ -33,6 +33,7 @@
 
 <!--Directives-->
 <script src="assets/javascript/directives/ntPageNav.js"></script>
+<script src="assets/javascript/directives/ntCategorySelector.js"></script>
 
 <!--Controllers-->
 

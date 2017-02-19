@@ -1,8 +1,9 @@
 <h1>Notes index <a class="btn btn-default" href="#/notes/new">New Note</a></h1>
+<nt-category-selector ng-model="search.category"></nt-category-selector>
 <div class="row">
-    <div ng-repeat="note in notes" class="col-sm-6">
-        <h2><a href="#/notes/{{note.id}}">{{note.title}}</a></h2>
-        <p>{{note.description}}</p>
-        <p><span class="label label-info">{{note.category.name}}</span></p>
-    </div>
+  <div ng-repeat="note in notes" class="col-sm-6">
+    <h2><a href="#/notes/{{note.id}}">{{note.title}}</a></h2>
+    <p>{{note.description}}</p>
+    <p><span class="label label-info">{{note.category.name}}</span></p>
+  </div>
 </div>
