@@ -7,7 +7,16 @@
 </head>
 
 <body>
-    <h1>Note Taker App</h1>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">
+                    <a href="/#/">Note Taker</a>
+                </div>
+            </div>
+            <nt-page-nav></nt-page-nav>
+        </div>
+    </nav>
     <div ng-view class="container-fluid"></div>
 </body>
 
@@ -23,6 +32,8 @@
 <script src="assets/javascript/routes.js"></script>
 
 <!--Directives-->
+<script src="assets/javascript/directives/ntPageNav.js"></script>
+
 <!--Controllers-->
 
 <script src="assets/javascript/controllers/noteIndexController.js"></script>
