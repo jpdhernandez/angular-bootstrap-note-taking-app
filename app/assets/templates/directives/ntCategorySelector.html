@@ -1,4 +1,7 @@
 <div class="nt-category-selector btn-group" role="group">
-  <a href="" ng-repeat="category in categories" class="btn btn-default" ng-click="toggleCategory(category)">
-      {{category.name}}</a>
+  <a href="" 
+     ng-repeat="category in categories" 
+     class="btn btn-default" 
+     ng-click="toggleCategory(category)" 
+     ng-class="{'active': isActive('category')}">{{category.name}}</a>
 </div>

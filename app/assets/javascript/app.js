@@ -1,1 +1,1 @@
-angular.module("NoteTaker", ["ngRoute", "ngResource"]);
+angular.module("NoteTaker", ["ngRoute", "ngResource", "underscore"]);

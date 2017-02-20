@@ -1,1 +1,4 @@
 node_modules/
+.jsbeautifyrc
+bower_components/
+.vscode/launch.json
