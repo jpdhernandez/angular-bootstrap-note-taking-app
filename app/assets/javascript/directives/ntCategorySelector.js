@@ -7,7 +7,7 @@ angular.module("NoteTaker").directive("ntCategorySelector", function(Category) {
     require: "?ngModel",
     templateUrl: "/assets/templates/directives/ntCategorySelector.html",
     link: function(scope, element, attrs, ngModelCtrl){
-      var activeCategory = {};
+      let activeCategory = {};
       scope.categories = Category.query();
 
       scope.isActive = function (category) {
