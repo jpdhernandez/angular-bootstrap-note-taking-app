@@ -6,11 +6,11 @@ angular.module("NoteTaker").directive("ntCategorySelector", function(Category) {
     // '?' makes it optional, this brings in ngModel as the fourth arg to our link
     require: "?ngModel",
     templateUrl: "/assets/templates/directives/ntCategorySelector.html",
-    link: function(scope, element, attrs, ngModelCtrl){
+    link: function(scope, element, attrs, ngModelCtrl) {
       let activeCategory = {};
       scope.categories = Category.query();
 
-      scope.isActive = function (category) {
+      scope.isActive = function(category) {
         return activeCategory && activeCategory.id === category.id;
       };
 
